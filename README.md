@@ -13,6 +13,7 @@ Backend RESTful API developed in Python using FastAPI for managing cinema season
 
 ## Project Structure
 
+```text
 cinema-management/
 │
 ├── main.py             # FastAPI application, routing, and endpoints
