@@ -22,7 +22,6 @@ cinema-management/
 ├── auth.py             # Authentication, password hashing, and JWT/RBAC logic
 ├── database.py         # Database session and connection setup
 ├── test.py             # Comprehensive test suite (integration & unit tests)
-├── requirements.txt    # Project Python dependencies
 └── README.md           # Project documentation
 ```
 
