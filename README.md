@@ -1,6 +1,6 @@
 # Cinema Management System (Backend)
 
-Backend RESTful API developed in Python using FastAPI for managing cinema seasons (programs), film screenings, staff assignments, reviews, approvals, and scheduling, adhering to strict role-based access control (RBAC) and lifecycle workflows.
+Backend RESTful API developed in Python using FastAPI for managing cinema programs (seasons), film screenings, staff assignments, reviews, approvals, and scheduling, adhering to strict role-based access control (RBAC) and lifecycle workflows.
 
 ## Technologies Used
 
