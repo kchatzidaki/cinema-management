@@ -27,7 +27,7 @@ cinema-management/
 
 ## Key Features
 
-* **Role-Based Access Control (RBAC):** Distinct permissions for Visitors, Artists, Staff, and Organizers.
+* **Role-Based Access Control (RBAC):** Distinct permissions for Visitors, Users, Programmers, Staff, and Submitters.
 * **Lifecycle Workflows:** Dynamic management of program states and film screening approvals.
 * **Secure Authentication:** Token-based security and password hashing implemented in `auth.py`.
 * **Automated Testing:** Robust testing framework using `pytest` to ensure API reliability.
