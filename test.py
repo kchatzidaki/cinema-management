@@ -135,7 +135,7 @@ def test_full_screening_lifecycle_and_workflow():
     })
     assert appr_res.status_code == 200
 
-    client.patch(f"/programs/{prog_id}/state?target_state=FINAL_PUBLICATION&current_user_id=1")
+    client.patch(f"/programs/{prog_id}/state?target_state=FINAL_SUBMISSION&current_user_id=1")
     client.patch(f"/programs/{prog_id}/state?target_state=DECISION&current_user_id=1")
 
     schedule_res = client.post(f"/screenings/{scr_id}/schedule?start_time=2026-06-02T18:00:00&end_time=2026-06-02T20:00:00&user_id=1")
@@ -303,7 +303,7 @@ def test_invalid_schedule_time_window():
     client.post(f"/screenings/{scr_id}/review?user_id=3", json={"score": 9.0, "comments": "Great"})
     client.patch(f"/programs/{prog_id}/state?target_state=SCHEDULING&current_user_id=1")
     client.post(f"/screenings/{scr_id}/approve?user_id=2", json={"conditional_notes": "None"})
-    client.patch(f"/programs/{prog_id}/state?target_state=FINAL_PUBLICATION&current_user_id=1")
+    client.patch(f"/programs/{prog_id}/state?target_state=FINAL_SUBMISSION&current_user_id=1")
     client.patch(f"/programs/{prog_id}/state?target_state=DECISION&current_user_id=1")
 
     bad_schedule = client.post(f"/screenings/{scr_id}/schedule?start_time=2027-02-02T22:00:00&end_time=2027-02-02T20:00:00&user_id=1")
@@ -424,7 +424,7 @@ def test_schedule_screening_not_approved():
     client.patch(f"/programs/{prog_id}/state?target_state=ASSIGNMENT&current_user_id=1")
     client.patch(f"/programs/{prog_id}/state?target_state=REVIEW&current_user_id=1")
     client.patch(f"/programs/{prog_id}/state?target_state=SCHEDULING&current_user_id=1")
-    client.patch(f"/programs/{prog_id}/state?target_state=FINAL_PUBLICATION&current_user_id=1")
+    client.patch(f"/programs/{prog_id}/state?target_state=FINAL_SUBMISSION&current_user_id=1")
     client.patch(f"/programs/{prog_id}/state?target_state=DECISION&current_user_id=1")
 
     # Προσπάθεια scheduling χωρίς να έχει γίνει APPROVED

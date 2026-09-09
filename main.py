@@ -114,8 +114,8 @@ def update_program_state(program_id: int, target_state: str, current_user_id: in
         "SUBMISSION": "ASSIGNMENT",
         "ASSIGNMENT": "REVIEW",
         "REVIEW": "SCHEDULING",
-        "SCHEDULING": "FINAL_PUBLICATION",
-        "FINAL_PUBLICATION": "DECISION",
+        "SCHEDULING": "FINAL_SUBMISSION",
+        "FINAL_SUBMISSION": "DECISION",
         "DECISION": "ANNOUNCED"
     }
     
