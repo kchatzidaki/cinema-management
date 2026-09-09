@@ -13,15 +13,15 @@ Backend RESTful API developed in Python using FastAPI for managing cinema season
 
 ## Project Structure
 
-cinema-management/
-├── main.py             # FastAPI application, routing, and endpoints
-├── models.py           # SQLAlchemy database models (User, Program, Screening, etc.)
-├── schemas.py          # Pydantic validation and serialization schemas
-├── auth.py             # Authentication, password hashing, and JWT/RBAC logic
-├── database.py         # Database session and connection setup
-├── test.py             # Comprehensive test suite (integration & unit tests)
-├── requirements.txt    # Project Python dependencies
-└── README.md           # Project documentation
+* `cinema-management/`
+  * `main.py` - FastAPI application, routing, and endpoints
+  * `models.py` - SQLAlchemy database models (User, Program, Screening, etc.)
+  * `schemas.py` - Pydantic validation and serialization schemas
+  * `auth.py` - Authentication, password hashing, and JWT/RBAC logic
+  * `database.py` - Database session and connection setup
+  * `test.py` - Comprehensive test suite (integration & unit tests)
+  * `requirements.txt` - Project Python dependencies
+  * `README.md` - Project documentation
 
 ## Key Features
 
