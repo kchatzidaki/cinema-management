@@ -21,7 +21,30 @@ cinema-management/
 ├── schemas.py          # Pydantic validation and serialization schemas
 ├── auth.py             # Authentication, password hashing, and JWT/RBAC logic
 ├── database.py         # Database session and connection setup
+├── data.py             # Data handling and initial seed/operations logic
 ├── test.py             # Comprehensive test suite (integration & unit tests)
+├── cinema.db           # SQLite main database file
+├── test_cinema.db      # SQLite test database file
+├── docs/               # Documentation and system diagrams
+│   ├── Activity Diagrams/
+│   │   ├── AD - Assign Handler.png
+│   │   ├── AD - Create Program.png
+│   │   ├── AD - Review Screening.png
+│   │   └── AD - Submit Screening.png
+│   ├── Context Diagrams/
+│   ├── Sequence Diagrams/
+│   │   ├── SD - Authentication.png
+│   │   ├── SD - Reject Screening.png
+│   │   ├── SD - Search & View Screening.png
+│   │   └── SD - User Log In.png
+│   ├── Use Case Diagrams/
+│   │   ├── Use Case Diagram - 1.png
+│   │   ├── Use Case Diagram - 2.png
+│   │   └── Use Case Diagram - 3.png
+│   ├── Component Diagram.png
+│   ├── ER Diagram.png
+│   ├── Relational Model.png
+│   └── 321202039_report.pdf
 └── README.md           # Project documentation
 ```
 
