@@ -19,7 +19,7 @@ cinema-management/
 ├── main.py             # FastAPI application, routing, and endpoints
 ├── models.py           # SQLAlchemy database models (User, Program, Screening, etc.)
 ├── schemas.py          # Pydantic validation and serialization schemas
-├── auth.py             # Authentication, password hashing, and JWT/RBAC logic
+├── auth.py             # HTTP Basic authentication and role-based access control
 ├── database.py         # Database session and connection setup
 ├── data.py             # Data handling and initial seed/operations logic
 ├── test.py             # Comprehensive test suite (integration & unit tests)
@@ -52,5 +52,5 @@ cinema-management/
 
 * **Role-Based Access Control (RBAC):** Distinct permissions for Visitors, Users, Programmers, Staff, and Submitters.
 * **Lifecycle Workflows:** Dynamic management of program states and film screening approvals.
-* **Secure Authentication:** Token-based security and password hashing implemented in `auth.py`.
+* **Authentication & Authorization:** HTTP Basic authentication and role-based access control for managing user permissions.
 * **Automated Testing:** Robust testing framework using `pytest` to ensure API reliability.
